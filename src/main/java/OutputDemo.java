@@ -38,6 +38,9 @@ public class OutputDemo {
         System.out.printf("money = %.2f %n", money);
         System.out.printf("money = %,f %n", money);
         System.out.printf("money = %,.2f", money);
+
+        System.out.println("----");
+        System.out.printf("%5.10s", "Hi there!");
     }
 
 }
