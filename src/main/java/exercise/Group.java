@@ -1,0 +1,10 @@
+package exercise;
+
+import java.time.LocalDate;
+
+public class Group {
+    int id;
+    String name;
+    Account creator;
+    LocalDate createdDate;
+}

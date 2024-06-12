@@ -1,0 +1,9 @@
+package exercise;
+
+import java.time.LocalDate;
+
+public class GroupAccount {
+    Group group;
+    Account account;
+    LocalDate joinedDate;
+}
