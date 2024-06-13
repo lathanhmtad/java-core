@@ -5,5 +5,11 @@ public class WhileDemo {
             System.out.println("i = " + i);
             i++;
         }
+
+        System.out.println("--------------");
+        int i2 = 1;
+        while (i2 <= 10) {
+            System.out.println("i2 = " + i2++);
+        }
     }
 }

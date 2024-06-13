@@ -24,6 +24,13 @@ public class RandomDemo {
         // Lấy ngẫu nhiên phần tử trong mảng
         String[] fruits = {"Cam", "Quýt", "Táo", "Dứa"};
         int index = random.nextInt(fruits.length);
-        System.out.println("fruits[" + index + "] = " + fruits[index]);
+        // System.out.println("fruits[" + index + "] = " + fruits[index]);
+        System.out.printf("fruits[%d] =  %s%n", index, fruits[index]);
+
+        System.out.println(random.nextExponential());
+
+        // -7 <= n <= -5
+        // 5 <= n <= 7
+        System.out.println((random.nextInt(7 + 1 - 5) + 5) * -1);
     }
 }

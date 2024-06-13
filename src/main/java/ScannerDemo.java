@@ -22,5 +22,7 @@ public class ScannerDemo {
         else
             gender = Gender.FEMALE;
         System.out.println("Giới tính của bạn là: " + gender);
+
+        System.out.println(Gender.valueOf("MALE"));
     }
 }

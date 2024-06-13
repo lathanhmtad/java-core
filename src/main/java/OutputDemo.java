@@ -18,7 +18,7 @@ public class OutputDemo {
         System.out.print("Java core\n");
 
         // System.out.printf
-        // %S: Đại diên cho String
+        // %s: Đại diên cho String
         // %d: Đại diện cho số nguyên
         // %f: Đại diện cho số thực
         // %c: Đại diện cho một ký tự
@@ -28,19 +28,28 @@ public class OutputDemo {
         System.out.println("+----+--------------------+");
         System.out.println("| ID |     FULL NAME      |");
         System.out.println("+----+--------------------+");
+        System.out.printf("| %2d | %18s |%n", 1, "Khoa"); // số dương căn lề phải
+        System.out.printf("| %-2d | %-18s |%n", 22, "Long"); // số âm căn lề trái
+        System.out.println("+----+--------------------+");
+
+        System.out.println("-----------DDDDDDDD------------");
+        System.out.println("-----------DDDDDDDD------------");
+
         System.out.printf("| %2d | %18s |%n", 111, "Khoa");
         System.out.println("+----+--------------------+");
         System.out.printf("| %-2d | %-18s |%n", 2, "Long");
         System.out.println("+----+--------------------+");
 
         // Gom nhóm, làm tròn
-        double money = 12345678321123123123123.789;
+        double money = 12345678.789567;
         System.out.printf("money = %.2f %n", money);
         System.out.printf("money = %,f %n", money);
-        System.out.printf("money = %,.2f", money);
+        System.out.printf("money = %,.2f %n", money);
+        System.out.printf("money = %,d %n", 100000000);
+        System.out.printf("money = %s", "Hi");
 
-        System.out.println("----");
-        System.out.printf("%5.10s", "Hi there!");
+        System.out.println("\n----");
+        System.out.printf("%3.1s", "Hi there!");
     }
 
 }

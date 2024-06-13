@@ -1,6 +1,13 @@
 public class OperatorsDemo {
     public static void main(String[] args) {
-
+        // Toán tử số học
+        // +, -, *, /, %
+        // int +-*/% int -> int
+        System.out.println(99 + 1);
+        System.out.println(99 - 1);
+        System.out.println(99 * 2);
+        System.out.println(99 / 2);
+        System.out.println(99 % 2);
 
         // +=, -=, *=, /=, %=
         int a = 100;
@@ -26,5 +33,6 @@ public class OperatorsDemo {
         // NOT: !
         boolean ok = b > 5 && b < 10;
         boolean notTrue = !true;
+        boolean test = b > 5 || b < 10;
     }
 }
