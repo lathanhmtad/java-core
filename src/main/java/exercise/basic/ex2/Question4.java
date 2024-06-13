@@ -1,4 +1,4 @@
-package exercise.ex2;
+package exercise.basic.ex2;
 
 public class Question4 {
     public static void main(String[] args) {
