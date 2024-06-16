@@ -13,6 +13,6 @@ public class Question2 {
         System.out.println("Nhập chuỗi s2: ");
         String s2 = scanner.nextLine();
 
-        System.out.println("s2 + s1 = " + s2.concat(s1));
+        System.out.println("s1 + s2 = " + s1.concat(s2));
     }
 }
