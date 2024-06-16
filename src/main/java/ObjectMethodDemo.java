@@ -17,5 +17,11 @@ public class ObjectMethodDemo {
 
         System.out.println(dog1 == dog2);
         System.out.println(dog1.equals(dog2));
+        System.out.println(dog1.hashCode());
+        System.out.println(dog2.hashCode());
+
+        // hashCode
+        // 2 đối tượng bằng nhau thì hashCode bằng nhau
+        // hashCode bằng nhau chưa chắc 2 đối tượng bằng nhau cần phải so sánh các thuộc tính
     }
 }

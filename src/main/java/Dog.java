@@ -1,6 +1,9 @@
+import java.util.Objects;
+
 public class Dog {
     String name;
     int age;
+
 
     @Override
     public boolean equals(Object obj) {
@@ -8,6 +11,11 @@ public class Dog {
         if (!(obj instanceof Dog)) return false;
         Dog that = (Dog) obj;
         return this.name.equals(that.name) && this.age == that.age;
+    }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode() + age;
     }
 
 //    @Override
