@@ -1,3 +1,5 @@
+import entity.Dog;
+
 public class ConstructorDemo {
     public static void main(String[] args) {
         // Constructor: Hàm khởi tạo
@@ -8,5 +10,9 @@ public class ConstructorDemo {
 
         Dog dog2 = new Dog("Duy");
         System.out.println("dog2.toString() = " + dog2.toString());
+
+        // Mặc định: 0 tham số
+        Dog dog3 = new Dog();
+        System.out.println("dog3 = " + dog3);
     }
 }
