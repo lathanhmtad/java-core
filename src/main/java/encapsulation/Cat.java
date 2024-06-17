@@ -15,6 +15,15 @@ public class Cat {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age > 0)
+            this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

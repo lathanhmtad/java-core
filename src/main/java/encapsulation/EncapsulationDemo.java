@@ -7,6 +7,8 @@ public class EncapsulationDemo {
         // 2. Cung cấp getter / setter
 
         Cat cat = new Cat("Long", 2);
+        cat.setAge(-100);
         System.out.println("cat.getName() = " + cat.getName());
+        System.out.println(cat);
     }
 }
