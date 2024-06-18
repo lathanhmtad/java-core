@@ -1,4 +1,4 @@
-package exercise.ex4;
+package exercise.basic.ex4;
 
 import java.util.Scanner;
 
