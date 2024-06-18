@@ -6,10 +6,14 @@ public class InheritanceDemo {
         // Mục đích: Tái sử dụng code
         // Từ khóa: extends
 
-        Duck duck = new Duck();
+        Duck duck = new Duck("Long", 4);
+        // duck.name = "";
+
+        // @Override
         duck.eat();
 
         // Từ khóa: super
+        System.out.println(duck);
 
         // Đơn kế thừa
     }
