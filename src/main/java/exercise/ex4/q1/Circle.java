@@ -34,7 +34,7 @@ public class Circle {
 
 
     public double getArea() {
-        return 3.14 * radius * radius;
+        return Math.PI * radius * radius;
     }
 
     @Override
