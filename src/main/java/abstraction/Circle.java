@@ -1,5 +1,7 @@
 package abstraction;
 
+import encapsulation.Cat;
+
 public class Circle extends Shape implements Drawable {
     private double radius;
 
@@ -9,7 +11,7 @@ public class Circle extends Shape implements Drawable {
 
     @Override
     public double area() {
-        return radius * Math.PI;
+        return radius * radius * Math.PI;
     }
 
     @Override

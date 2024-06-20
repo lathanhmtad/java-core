@@ -1,7 +1,7 @@
 package abstraction;
 
 public interface Drawable {
-    void draw();
+    public abstract void draw();
 
     double area();
 }
