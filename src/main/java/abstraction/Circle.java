@@ -1,8 +1,6 @@
 package abstraction;
 
-import encapsulation.Cat;
-
-public class Circle extends Shape implements Drawable {
+public class Circle extends Shape implements Drawable, Extendable {
     private double radius;
 
     public Circle(double radius) {
@@ -17,5 +15,10 @@ public class Circle extends Shape implements Drawable {
     @Override
     public void draw() {
         System.out.println("Draw Circle");
+    }
+
+    @Override
+    public void extend() {
+        System.out.println("Extend circle");
     }
 }

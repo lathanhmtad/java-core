@@ -10,6 +10,6 @@ public class Person {
     }
 
     public void run() {
-        System.out.println("Person run");
+        System.out.println("Person is running ...");
     }
 }
