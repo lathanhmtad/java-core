@@ -8,6 +8,31 @@ public class TuyenSinh implements ITuyenSinh {
     Scanner scanner = new Scanner(System.in);
     private List<ThiSinh> thiSinhList = new LinkedList<>();
 
+    public void showMenu() {
+        while(true) {
+            System.out.println("1. Thêm thí sinh");
+            System.out.println("2. Hiển thị danh sách thí sinh");
+            System.out.println("3. Tìm kiếm thí sinh theo sbd");
+            System.out.println("4. Thoát chương trình");
+            System.out.println("Mời bạn chọn chức năng: ");
+            int menu = Integer.parseInt(scanner.nextLine());
+            if(menu == 1) {
+                themThiSinh();
+            } else if (menu == 2) {
+                hienThiDSTS();
+            }
+            else if(menu == 3) {
+                timKiemThiSinhTheoSBD();
+            } else if(menu == 4) {
+                return;
+            }
+            else {
+                System.out.println("Vui lòng chọn đúng chức năng");
+            }
+        }
+    }
+
+
     @Override
     public void themThiSinh() {
         System.out.println("Nhập vào số báo danh: ");
@@ -18,6 +43,7 @@ public class TuyenSinh implements ITuyenSinh {
         String diaChi = scanner.nextLine();
         System.out.println("Nhập vào mức ưu tiên: ");
         int mucUuTien = Integer.parseInt(scanner.nextLine());
+        System.out.println("Nhập vào khối thi: ");
         String khoiThi = scanner.nextLine();
         ThiSinh thiSinh = null;
         switch (khoiThi) {
@@ -30,26 +56,29 @@ public class TuyenSinh implements ITuyenSinh {
 
     @Override
     public void hienThiDSTS() {
-        System.out.println("+------+---------------------+---------------------+------+---------------------+");
-        System.out.println("| SBD  |        HỌ TÊN       |     ĐỊA CHỈ         |  MUT |       MÔN THI       |");
-        System.out.println("+------|---------------------|---------------------|------|---------------------|");
+        System.out.println("+------+--------------------+--------------------+------+--------------------+");
+        System.out.println("| SBD  |        HỌ TÊN      |     ĐỊA CHỈ        |  MUT |       MÔN THI      |");
+        System.out.println("+------|--------------------|--------------------|------|--------------------|");
         for (ThiSinh thiSinh : thiSinhList) {
             System.out.printf("| %-4s | %-18s | %-18s | %-4s | %-18S |%n",
-                    thiSinh.soBaoDanh, thiSinh.hoTen, thiSinh.diaChi, thiSinh.mucUuTien, thiSinh.monThi());
+                    thiSinh.soBaoDanh, thiSinh.hoTen, thiSinh.diaChi, thiSinh.mucUuTien, thiSinh.monThi()
+            );
         }
+        System.out.println("+------|--------------------|--------------------|------|--------------------|");
     }
 
     @Override
-    public void timKiemTheoSBD() {
+    public void timKiemThiSinhTheoSBD() {
         System.out.println("Nhập vào số báo danh");
         int soBaoDanh = Integer.parseInt(scanner.nextLine());
-        System.out.println("+------+---------------------+---------------------+------+---------------------+");
-        System.out.println("| SBD  |        HỌ TÊN       |     ĐỊA CHỈ         |  MUT |       MÔN THI       |");
-        System.out.println("+------|---------------------|---------------------|------|---------------------|");
+        System.out.println("+------+--------------------+--------------------+------+--------------------+");
+        System.out.println("| SBD  |        HỌ TÊN      |     ĐỊA CHỈ        |  MUT |       MÔN THI      |");
+        System.out.println("+------|--------------------|--------------------|------|--------------------|");
         for (ThiSinh thiSinh : thiSinhList) {
             if (thiSinh.soBaoDanh != soBaoDanh) continue;
             System.out.printf("| %-4s | %-18s | %-18s | %-4s | %-18S |%n",
                     thiSinh.soBaoDanh, thiSinh.hoTen, thiSinh.diaChi, thiSinh.mucUuTien, thiSinh.monThi());
         }
+        System.out.println("+------|--------------------|--------------------|------|--------------------|");
     }
 }
