@@ -6,6 +6,5 @@ public class Main {
 
         ManageStudent manageStudent = new ManageStudent();
         manageStudent.readStudentDataByFile(inputFilePath);
-
     }
 }

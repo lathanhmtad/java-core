@@ -11,6 +11,16 @@ public class Student {
     private String phone;
     private String email;
 
+    public Student(String fullName, LocalDate dob, Gender gender, String address, String homeTown, String phone, String email) {
+        this.fullName = fullName;
+        this.dob = dob;
+        this.gender = gender;
+        this.address = address;
+        this.homeTown = homeTown;
+        this.phone = phone;
+        this.email = email;
+    }
+
     enum Gender {
         MALE, FEMALE
     }
