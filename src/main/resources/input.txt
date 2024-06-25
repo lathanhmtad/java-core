@@ -1,4 +1,4 @@
-1, Nguyễn Đăng Duy, 14/10/2003, Nam, Hòa Liên, Đà Nẵng, 0763705638, duy@gmail.com, 12/6/2021, 27.1, None, None, None, None
+1, Nguyễn Đăng Duy, 14/10/2003, Nam, Hòa Liên, Đà Nẵng, 0763705638, duy@gmail.com, 12/06/2021, 27.1, None, None, None, None
 2, Lê Minh Ngọc, 26/07/2001, Nữ, Sơn Trà, Hà Nội, 0512312312, ngoc@gmail.com, NONE, NONE, Quốc gia, Giải thi đấu lập trình quốc gia, 2019, Nhì
 2, Võ Đình Huy, 21/12/2004, Nam, Điện Bàn, Quảng Nam, 0987654321, huy@gmail.com, NONE, NONE, Quốc tế, Giải thi lý cấp quốc tế, 2020, Nhất
 1, Nguyễn Văn A, 20/02/2000, Nam, Đà Nẵng, Quảng Nam, 0512362481, a@gmail.com, 21/06/2023, 28.5, None, None, None, None

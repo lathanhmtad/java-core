@@ -13,9 +13,14 @@ public class ManageStudent {
         try (
                 FileInputStream fis = new FileInputStream(path);
                 ) {
-            while(fis.read)
-        } catch (IOException e) {
+            byte[] bytes = new byte[fis.available()];
 
+            String content = new String(bytes);
+            System.out.println(content);
+            return true;
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+            return false;
         }
     }
 }
