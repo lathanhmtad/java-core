@@ -1,0 +1,6 @@
+1, Nguyễn Đăng Duy, 14/10/2003, Nam, Hòa Liên, Đà Nẵng, 0763705638, duy@gmail.com, 12/6/2021, 27.1, None, None, None, None
+2, Lê Minh Ngọc, 26/07/2001, Nữ, Sơn Trà, Hà Nội, 0512312312, ngoc@gmail.com, NONE, NONE, Quốc gia, Giải thi đấu lập trình quốc gia, 2019, Nhì
+2, Võ Đình Huy, 21/12/2004, Nam, Điện Bàn, Quảng Nam, 0987654321, huy@gmail.com, NONE, NONE, Quốc tế, Giải thi lý cấp quốc tế, 2020, Nhất
+1, Nguyễn Văn A, 20/02/2000, Nam, Đà Nẵng, Quảng Nam, 0512362481, a@gmail.com, 21/06/2023, 28.5, None, None, None, None
+2, Nguyễn Văn B, 10/01/2000, Nữ, Quảng Trị, Đà Nẵng, 0845120365, b@gmail.com, None, None, Quốc gia, HSG Toán, 2023, Nhì
+1, Nguyễn Văn c, 30/03/2000, Nam, Quảng Nam, Đà Nẵng, 0945120364, c@gmail.com, 21/06/2023, 27.75, None, None, None, None
