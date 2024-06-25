@@ -1,2 +1,2 @@
-//public class Shiba extends Dog   {
+//public class Shiba extends Dog {
 //}

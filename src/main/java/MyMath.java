@@ -1,5 +1,8 @@
-public class Math {
+public class MyMath {
+    public static final double PI = 3.41;
+
     public static int max(int a, int b) {
+
         return a > b ? a : b;
     }
 }

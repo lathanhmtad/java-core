@@ -15,7 +15,7 @@ public class StaticDemo {
         }
 
         // static method
-        int max = Math.max(100, 1);
+        int max = MyMath.max(100, 1);
         System.out.println("max = " + max);
     }
 }
