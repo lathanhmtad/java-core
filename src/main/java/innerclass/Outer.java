@@ -6,4 +6,10 @@ public class Outer {
     public Outer(int value) {
         this.value = value;
     }
+
+    public class Inner {
+        public void showInfo() {
+            System.out.println("outer value = " + value);
+        }
+    }
 }

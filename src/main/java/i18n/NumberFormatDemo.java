@@ -6,8 +6,9 @@ import java.util.Locale;
 public class NumberFormatDemo {
     public static void main(String[] args) {
         double money = 12345666.789;
-        Locale vi = new Locale("vi");
-        Locale ja = new Locale("ja");
+        // Locale vi = new Locale("vi");
+        Locale vi = Locale.of("vi");
+        Locale ja = Locale.of("ja");
 
         String s1 = formatNumberByLocale(money, vi);
         String s2 = formatNumberByLocale(money, ja);
