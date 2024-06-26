@@ -27,4 +27,15 @@ public class Exercise4 {
         }
         return res.substring(0, res.length() - 1);
     }
+
+    String question16(String s, int n) {
+        int length = s.length();
+        if (length % n != 0) return "KO";
+
+        String result = "";
+        for (int i = 0; i < length; i += n) {
+            result = result.concat(s.substring(i, i + n) + " ");
+        }
+        return result.trim();
+    }
 }
