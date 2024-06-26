@@ -11,7 +11,7 @@ public class User {
         MALE, FEMALE
     }
 
-    enum Role {
+    private enum Role {
         ADMIN, MANAGER, EMPLOYEE
     }
 }
